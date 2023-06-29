@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="tutor.css">
+  <!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
+</head>
+ 
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <h3 class="hide">Tutor Learner</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder=" Search ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <!-- <div class="active-tab"></div> -->
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="index.html"  data-active="0">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="link hide">Home</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="index.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+      
+        
+        
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="submissions.html" data-active="3">
+            <div class="icon">
+              <i class="fas fa-paper-plane"></i>
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <span class="link hide">Submission</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="course-details.html" data-active="3">
+            <div class="icon">
+              <i class="fas fa-book"></i>
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="link hide">Course Details</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+              <i class="fas fa-user"></i>
+            </div>
+            <span class="link hide">Tutor Details</span>
+          </a>
+        </li>
+        
+      </ul>
+
+      
+
+
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <!-- <img src="./img/face-1.png" alt=""> -->
+          <div class="admin-info">
+            <h3>John Doe</h3>
+            <h5>john@gmail.com</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">John Doe</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <main >
+    
+    <div class="main-top">
+      <h1>Tutor Details</h1>
+    </div>
+   
+    <!-- table -->
+    
+      <div class="table">
+        <section class="table__body">
+          <table>
+              <thead>
+                  <tr>
+                      <th> <input type="checkbox"></th>
+                      <th> Tutor Name </th>
+                      <th> Course</th>
+                      <th> Email Address </th>
+                      <th>Phone Number</th>
+                      <th>Area(s) of Expertise</th>
+                      <th>Qualifications</th>
+                      <th>Rate</th>
+                      
+                      
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td> Zinzu Chan Lee</td>
+                      <td>
+                        <!-- <p class="status paid">Paid</p> -->
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                      <td></td>
+                      <td> <button class="rate"id="popup-button">Rate</button> </td>
+                      
+                     
+                  </tr>
+                  <tr>
+                    <td> 1 </td>
+                    <td> Zinzu Chan Lee</td>
+                    <td>
+                      <!-- <p class="status paid">Paid</p> -->
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                    <td></td>
+                    <td> <button class="rate"id="popup-button">Rate</button> </td>
+                    
+                   
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> Zinzu Chan Lee</td>
+                  <td>
+                    <!-- <p class="status paid">Paid</p> -->
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                  <td></td>
+                  <td> <button class="rate"id="popup-button">Rate</button> </td>
+                  
+                 
+              </tr>
+              
+                  
+                
+                
+              </tbody>
+          </table>
+          <div class="table-btn">
+            <button class="pre">Previous</button>
+            <button class="next">Next</button>
+          </div>
+      </div>
+  </div>
+  <div class="wrapper" id="popup-overlay">
+    <div id="popup-content">
+      <h2>Rate</h2>
+      <p>Rate your tutor on a scale of 1 to 5. This action cannot be undone</p>
+      <form action="#" id="feedback-form">
+        <div class="rating">
+            <input type="number" name="rating" value="4"  hidden>
+            <i class='bx bx-star star' style="--i: 0;"></i>
+            <i class='bx bx-star star' style="--i: 1;"></i>
+            <i class='bx bx-star star' style="--i: 2;"></i>
+            <i class='bx bx-star star' style="--i: 3;"></i>
+            <i class='bx bx-star star' style="--i: 4;"></i>
+        </div>
+        <!-- <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea> -->
+        <div class="btn-group">
+          <button class="btn cancel" id="close-button">Cancel</button>
+         <button type="submit" class="btn submit">Submit</button>
+            
+        </div>
+    </form>
+    </div>
+  </div>
+  <!-- <div class="wrapper">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <form action="#">
+        <div class="rating">
+            <input type="number" name="rating" hidden>
+            <i class='bx bx-star star' style="--i: 0;"></i>
+            <i class='bx bx-star star' style="--i: 1;"></i>
+            <i class='bx bx-star star' style="--i: 2;"></i>
+            <i class='bx bx-star star' style="--i: 3;"></i>
+            <i class='bx bx-star star' style="--i: 4;"></i>
+        </div>
+        <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+        <div class="btn-group">
+            <button type="submit" class="btn submit">Submit</button>
+            <button class="btn cancel">Cancel</button>
+        </div>
+    </form>
+</div> -->
+  </main>
+
+  <script src="app.js"></script>
+  <script src="popup.js"></script>
+  <script src="table.js"></script>
+  <script src="rate.js"></script> 
+  <script>
+    const allStar = document.querySelectorAll('.rating .star')
+const ratingValue = document.querySelector('.rating input')
+
+allStar.forEach((item, idx)=> {
+	item.addEventListener('click', function () {
+		let click = 0
+		ratingValue.value = idx + 1
+
+		allStar.forEach(i=> {
+			i.classList.replace('bxs-star', 'bx-star')
+			i.classList.remove('active')
+		})
+		for(let i=0; i<allStar.length; i++) {
+			if(i <= idx) {
+				allStar[i].classList.replace('bx-star', 'bxs-star')
+				allStar[i].classList.add('active')
+			} else {
+				allStar[i].style.setProperty('--i', click)
+				click++
+			}
+		}
+	})
+})
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="progress.css">
+
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <h3 class="hide">Tutor Learner</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder=" Search ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <!-- <div class="active-tab"></div> -->
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="index.html" class="active" data-active="0">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="link hide">Home</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="index.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="submissions.html" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Submissions</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="topics.html" data-active="3">
+            <div class="icon">
+                <i class="fas fa-book"></i>
+                <i class="fas fa-book"></i>
+            </div>
+            <span class="link hide">Topics</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+            <a href="sessions.html" data-active="3">
+              <div class="icon">
+                <i class="fas fa-clock"></i>
+                <i class="fas fa-clock"></i>
+              </div>
+              <span class="link hide">Sessions</span>
+            </a>
+          </li>
+          <li class="tooltip-element" data-tooltip="3">
+            <a href="#" data-active="3">
+              <div class="icon">
+                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <span class="link hide">Progress</span>
+            </a>
+          </li>
+        
+      </ul>
+
+      
+
+
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <!-- <img src="./img/face-1.png" alt=""> -->
+          <div class="admin-info">
+            <h3>John Doe</h3>
+            <h5>john@gmail.com</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">John Doe</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <main >
+    <h1>Progress</h1>
+    <div class="cards">
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">Total Learners
+              
+            </p>
+          </div>
+          <span id="num">15</span>
+          
+
+          <!-- <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+            vel adipisci blanditiis voluptates eum. Nam, cum minima?
+          </p>    -->
+        </div>
+        
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">Total Submissions</p>
+          </div>
+          <span id="num">13</span>
+          <!-- <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+            vel adipisci blanditiis voluptates eum. Nam, cum minima?
+          </p>    -->
+        </div>   
+    </div>
+   
+    <!-- input -->
+    <div class="content">
+      <form id="animated">
+      <input type="text" name="search" placeholder="Search..">
+      </form>
+      <div class="table">
+        <section class="table__body">
+          <table>
+              <thead>
+                  <tr>
+                      <th> <input type="checkbox"></th>
+                      <th> Course Name <span class="icon-arrow">&DownArrow;</span></th>
+                      <th> Topic Name </th>
+                      <th> Status</th>
+                     
+                      
+                      
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td> Web Development</td>
+                      <td> Overview of Web Development </td>
+                      <td>
+                        <label class="switch">
+                      
+                          <input type="checkbox" checked>
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        covered
+                    </td>
+                     
+                      
+                     
+                  </tr>
+                  <tr>
+                      <td> 2 </td>
+                      <td>Web Development </td>
+                      <td> Introduction to TypeScript </td>
+                      <td>
+                        <label class="switch">
+                      
+                          <input type="checkbox" checked>
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        covered
+                    </td>
+                     
+                     
+                      
+                  </tr>
+                  <tr>
+                      <td> 3</td>
+                      <td> Web Development </td>
+                      <td> Advanced JavaScript </td>
+                      <td>
+                        <label class="switch">
+                          
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        covered
+                    </td>
+               
+                      
+                      
+                  </tr>
+                  <tr>
+                      <td> 4</td>
+                      <td> Web Development </td>
+                      <td> Introduction to Python and Django </td>
+                      <td>
+                        <label class="switch">
+                      
+                          <input type="checkbox" checked>
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        covered
+                    </td>
+                      
+                      
+                  </tr>
+                  
+                 
+                  
+              </tbody>
+              
+          </table>
+          <div class="table-btn">
+            <button class="pre">Previous</button>
+            <button class="next">Next</button>
+          </div>
+          
+      </div>
+  </div>
+  
+  </main>
+
+  <script src="app.js"></script>
+  <script src="popup.js"></script>
+  <script src="table.js"></script> 
+</body>
+
+</html>

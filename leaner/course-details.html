@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="course-details.css">
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <h3 class="hide">Tutor Learner</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder=" Search ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <!-- <div class="active-tab"></div> -->
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="index.html"  data-active="0">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="link hide">Home</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="index.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+      
+        
+        
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="submissions.html" data-active="3">
+            <div class="icon">
+              <i class="fas fa-paper-plane"></i>
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <span class="link hide">Submission</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3"class="active">
+            <div class="icon">
+              <i class="fas fa-book"></i>
+              <i class="fas fa-book"></i>
+            </div>
+            <span class="link hide">Course Details</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="tutor-details.html" data-active="3">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+              <i class="fas fa-user"></i>
+            </div>
+            <span class="link hide">Tutor Details</span>
+          </a>
+        </li>
+        
+      </ul>
+
+      
+
+
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <!-- <img src="./img/face-1.png" alt=""> -->
+          <div class="admin-info">
+            <h3>John Doe</h3>
+            <h5>john@gmail.com</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">John Doe</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <main >
+    <h1>Course Details & Tracking</h1>
+  
+    <div class="cards">
+      <div class="card">
+        <div class="header">
+         
+          <p class="alert">Course Tutor
+            
+          </p>
+        </div>
+        <h1>Nabende Peter</h1>
+        
+      </div>
+      <div class="card">
+        <div class="header">
+         
+          <p class="alert">Course Topic</p>
+        </div>
+         <h1>12</h1>
+      </div>
+      <div class="card">
+        <div class="header">
+         
+          <p class="alert">Course Coverage</p>
+        </div>
+         <h1>6 out Of 12</h1>
+      </div>   
+  </div>
+    <!-- input -->
+    <div class="content">
+      <form id="animated">
+      <input type="text" name="search" placeholder="Search..">
+      </form>
+      <div class="table">
+        <section class="table__body">
+          <table>
+              <thead>
+                  <tr>
+                      <th> <input type="checkbox"></th>
+                      <th> Course Name </th>
+                      <th> Topic </th>
+                      <th> Course Duration </th>
+                      <th>Prerequisites</th>
+                      <th>Assessment & Evaluation Technique</th>
+                      <th> Learning Outcome</th>
+                      
+                      
+                      
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td> Zinzu Chan Lee</td>
+                      <td></td>
+                      <td>
+                      
+                        <!-- <p class="status paid">Paid</p> -->
+                    </td>
+                      <!-- <td> Seoul </td> -->
+                     
+                      
+                     
+                  </tr>
+                  <tr>
+                      <td> 2 </td>
+                      <td>Jeet Saru </td>
+                      <td></td>
+                      <td>
+                        <!-- <p class="status not-paid">Not paid</p> -->
+                    </td>
+                      <!-- <td> Kathmandu </td> -->
+                      
+                     
+                      
+                  </tr>
+                  <tr>
+                      <td> 3</td>
+                      <td> Sonal Gharti </td>
+                      <td>
+                        <!-- <p class="status paid">Paid</p> -->
+                    </td>
+                      <!-- <td> Tokyo </td> -->
+                      
+                      
+                      
+                  </tr>
+                  <!-- <tr>
+                      <td> 4</td>
+                      <td> Alson GC </td>
+                      <td>
+                        <p class="status paid">Paid</p>
+                    </td>
+                      <td> New Delhi </td>
+                      
+                      
+                      
+                  </tr> -->
+                  <!-- <tr>
+                      <td> 5</td>
+                      <td>Sarita Limbu </td>
+                      <td>
+                        <p class="status not-paid">Not paid</p>
+                    </td>
+                      <td> Paris </td>
+                      
+                      
+                      
+                  </tr> -->
+                  <!-- <tr>
+                      <td> 6</td>
+                      <td> Alex Gonley </td>
+                      <td>
+                        <p class="status not-paid">Not paid</p>
+                    </td>
+                      <td> London </td>
+                   
+                      
+                      
+                  </tr> -->
+                
+                
+              </tbody>
+              
+          </table>
+          <div class="table-btn">
+            <button class="pre">Previous</button>
+            <button class="next">Next</button>
+          </div>
+      </div>
+  </div>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="popup.js"></script>
+  <script src="table.js"></script> 
+</body>
+
+</html>

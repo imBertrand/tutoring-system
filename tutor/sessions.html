@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sessions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="sessions.css">
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <h3 class="hide">Tutor Learner</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder=" Search ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <!-- <div class="active-tab"></div> -->
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" class="active" data-active="0">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="link hide">Home</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="index.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="submissions.html" data-active="2">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Submissions</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+            <a href="topics.html" data-active="3">
+              <div class="icon">
+                <i class='bx bx-bar-chart-square'></i>
+                <i class='bx bxs-bar-chart-square'></i>
+              </div>
+              <span class="link hide">Topics</span>
+            </a>
+          </li> 
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Sessions</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="progress.html" data-active="3">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="link hide">Progress</span>
+          </a>
+        </li>
+      </ul>
+
+      
+
+
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <!-- <img src="./img/face-1.png" alt=""> -->
+          <div class="admin-info">
+            <h3>John Doe</h3>
+            <h5>john@gmail.com</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">John Doe</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <main >
+    <h1>Sessions
+            <button class="btn1" id="myBtn"><i class="fas fa-plus"></i>Create Session</button>
+         </h1>
+   
+    
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <form>
+          <h2>Create Session</h2>
+          <p>Please enter the details for the session</p>
+          <div class="form-group">
+            <label for="name">Course Name</label>
+            <input type="text" id="course" name="course" >
+          </div>
+          <div class="form-group">
+            <label for="topic">Topic</label>
+            <input type="text" id="name" name="name" >
+          </div>
+          
+          <div class="form-group">
+            <label for="session">Session details</label>
+            <input type="text" id="details" name="details" >
+          </div>
+          
+         <div class="button">
+          <input type="submit" value="close" class="btn1-submit close">
+          <input type="submit" value="Submit" class="btn2-submit">
+        </div>
+        </form>
+        
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+          <form>
+            <h2>Edit Session</h2>
+            <p>Please enter the details for the session</p>
+            <div class="form-group">
+              <label for="name">Course</label>
+              <input type="text" id="course" name="course" >
+            </div>
+            <div class="form-group">
+              <label for="topic">Tutor Name</label>
+              <input type="text" id="name" name="name" >
+            </div>
+            
+            <div class="form-group">
+              <label for="session">Session details</label>
+              <input type="text" id="details" name="details" >
+            </div>
+            
+           <div class="button">
+            <input type="submit" value="close" class="btn1-submit close">
+            <input type="submit" value="Submit" class="btn2-submit">
+          </div>
+          </form>
+          
+        </div>
+      </div>
+    <div class="cards">
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">Total Learners
+              
+            </p>
+          </div>
+          <span id="num">15</span>
+          
+
+          <!-- <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+            vel adipisci blanditiis voluptates eum. Nam, cum minima?
+          </p>    -->
+        </div>
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">Total Learners</p>
+          </div>
+          <span id="num">12</span>
+           
+          <!-- <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+            vel adipisci blanditiis voluptates eum. Nam, cum minima?
+          </p>    -->
+        </div>
+           
+    </div>
+    <!-- input -->
+    <div class="content">
+      <form id="animated">
+      <input type="text" name="search" placeholder="Search..">
+      </form>
+      <div class="table">
+        <section class="table__body">
+          <table>
+              <thead>
+                  <tr>
+                      <th> <input type="checkbox"></th>
+                      <th> Course Name <span class="icon-arrow">&DownArrow;</span></th>
+                      <th> Topic</th>
+                      <th> Session Details </th>
+                      <th></th>
+                  
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td> Web Development </td>
+                      <td>
+                        Overview of Web Development 
+                    </td>
+                      <td> Thursday,26th/05/2023 <br>
+                        meet.google.com/xyz-abc </td>
+                      <td>
+                        
+                        <i onclick="document.getElementById('id01').style.display='block'" class="fas fa-trash-alt fa-lg"></i>
+                    
+                      <!-- <i onclick="document.getElementById('id01')" class="fas fa-trash-alt fa-lg"></i> -->
+                      &nbsp;
+                      <i class="fas fa-pen fa-lg" id="myBtn1"></i>
+                  </td>
+                      
+                     
+                  </tr>
+                  <tr>
+                      <td> 2 </td>
+                      <td>Web Development </td>
+                      <td>
+                        Introduction to TypeScript
+                    </td>
+                      <td> Thursday,26th/05/2023 <br>
+                        meet.google.com/xyz-abc </td>
+                      <td>
+                        
+                        <i onclick="document.getElementById('id01').style.display='block'" class="fas fa-trash-alt fa-lg"></i>
+                    
+                      <!-- <i onclick="document.getElementById('id01')" class="fas fa-trash-alt fa-lg"></i> -->
+                      &nbsp;
+                      <i class="fas fa-pen fa-lg" id="myBtn1"></i>
+                  </td>
+                     
+                      
+                  </tr>
+                  <tr>
+                      <td> 3</td>
+                      <td> Web Development </td>
+                      <td>
+                        Advanced JavaScript
+                    </td>
+                      <td> Thursday,26th/05/2023 <br>
+                        meet.google.com/xyz-abc</td>
+                      
+                      <td>
+                        
+                        <i onclick="document.getElementById('id01').style.display='block'" class="fas fa-trash-alt fa-lg"></i>
+                    
+                      <!-- <i onclick="document.getElementById('id01')" class="fas fa-trash-alt fa-lg"></i> -->
+                      &nbsp;
+                      <i class="fas fa-pen fa-lg" id="myBtn1"></i>
+                  </td>
+                      
+                  </tr>
+                  <tr>
+                      <td> 4</td>
+                      <td> Web Development </td>
+                      <td>
+                        Introduction to Python
+                    </td>
+                      <td> Thursday,26th/05/2023 <br>
+                        meet.google.com/xyz-abc </td>
+                      
+                      <td>
+                        
+                        <i onclick="document.getElementById('id01').style.display='block'" class="fas fa-trash-alt fa-lg"></i>
+                    
+                      <!-- <i onclick="document.getElementById('id01')" class="fas fa-trash-alt fa-lg"></i> -->
+                      &nbsp;
+                     <i class="fas fa-pen fa-lg" id="myBtn1"  ></i>
+                  </td>
+                      
+                  </tr>
+                  <!-- <tr>
+                      <td> 5</td>
+                      <td>Sarita Limbu </td>
+                      <td>
+                        Web Development
+                    </td>
+                      <td> Paris </td>
+                      
+                      
+                      
+                  </tr> -->
+                  <!-- <tr>
+                      <td> 6</td>
+                      <td> Alex Gonley </td>
+                      <td>
+                        Web Developmentp
+                    </td>
+                      <td> London </td>
+                      
+                      
+                      
+                  </tr> -->
+                
+                
+              </tbody>
+          </table>
+          <div class="table-btn">
+            <button class="pre">Previous</button>
+            <button class="next">Next</button>
+          </div>
+      </div>
+  </div>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="popup.js"></script>
+  <script src="table.js"></script> 
+</body>
+
+</html>
