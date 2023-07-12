@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <h3 class="hide">Tutor Learner</h3>
+    </div>
+
+    <!-- <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder=" Search ...">
+    </div> -->
+
+    <div class="sidebar-links">
+      <ul>
+        <!-- <div class="active-tab"></div> -->
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="index.html" class="active" data-active="0">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="link hide">Home</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        <!-- <li class="tooltip-element" data-tooltip="2">
+          <a href="submissions.html" data-active="2">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Submissions</span>
+          </a>
+        </li> -->
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="tutor.html" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Tutor</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="tutor.html" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Course</span>
+          </a>
+        </li>
+        
+      </ul>
+
+      
+
+
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <!-- <img src="./img/face-1.png" alt=""> -->
+          <div class="admin-info">
+            <h3>John Doe</h3>
+            <h5>john@gmail.com</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">John Doe</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <main >
+    <h1>Welcome Back John
+      <button class="btn" id="myBtn"><i class="fas fa-plus"></i>Add Tutor</button>
+    </h1>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <form>
+          <h2>Add Tutor</h2>
+          <p>please enter the details for the Tutor</p>
+          <div class="form-group">
+            <label for="name">Tutor Name</label>
+            <input type="text" id="name" name="name" >
+          </div>
+          <div class="form-group">
+            <label for="courseName">Course Name</label>
+            <input type="text" id="topic" name="topic" >
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="session" name="session" >
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="session" name="session" >
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="session" >
+          </div>
+          <div class="form-group">
+            <label for="area">Area(s) of Expertise</label>
+            <input type="text" id="session" name="session" >
+          </div>
+          <div class="form-group">
+            <label for="qualifications">Qualifications</label>
+            <input type="text" id="session" name="session" >
+          </div>
+         <div class="button">
+          <button class="btn1-submit close" >Cancel</button>
+          <!-- <input type="submit" value="close" class="btn1-submit close"> -->
+          <input type="submit" value="Submit" class="btn2-submit">
+        </div>
+        </form>
+      </div>
+    </div>
+
+<!-- toggle -->
+<div id="popupForm" class="popup-form1">
+  
+  <form onsubmit="return submitForm()">
+      <h4>Confirm  Payment</h4>
+      <p>Are you sure You want to confirm this payment? This action cannot be undone</p>
+      <div class="buttons">
+        <button class="btn1" id="cancel">Cancel</button>
+    <button type="submit" id="confirm">Confirm</button>
+      </div>
+      
+  </form>
+</div>
+
+    <div class="cards">
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">Total Learners
+              
+            </p>
+          </div>
+          <div class="graphs">
+            <span>15</span>
+            <div class="graph">
+              
+            </div>
+          </div>
+          
+        </div>
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">New mes</p>
+          </div>
+          <div class="graphs">
+            <span>15</span>
+            <div class="graph">
+
+            </div>
+          </div>
+          
+        </div>
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">New message!</p>
+          </div>
+          <div class="graphs">
+            <span>15</span>
+            <div class="graph">
+
+            </div>
+          </div>
+         
+        </div>   
+    </div>
+   
+    <!-- input -->
+    <div class="content">
+      <h2>Leaner Management</h2>
+      <form id="animated">
+      <input type="text" name="search" placeholder="Search..">
+      </form>
+      <div class="table">
+        <section class="table__body">
+          <table>
+              <thead>
+                  <tr>
+                      <th> <input type="checkbox"></th>
+                      <th> Name <span class="icon-arrow">&DownArrow;</span></th>
+                      <th> Status</th>
+                      <th> Course </th>
+                      <th>About</th>
+                      <th>Date & Time</th>
+                      
+                      
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td> Zinzu Chan Lee</td>
+                      <td>
+                        <label class="switch">
+                      
+                          <input type="checkbox" id="toggleCheckbox" onclick="toggleForm()">
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        paid
+                    </td>
+                      <td> Seoul </td>
+                      <td> Makerere university </td>
+                      <td> 17 Dec, 2022 </td>
+                      
+                     
+                  </tr>
+                  <tr>
+                      <td> 2 </td>
+                      <td>Jeet Saru </td>
+                      <td>
+                        <label class="switch">
+                      
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        paid
+                    </td>
+                      <td> Kathmandu </td>
+                      <td> Makerere university </td>
+                      <td> 27 Aug, 2023 </td>
+                     
+                      
+                  </tr>
+                  <tr>
+                      <td> 3</td>
+                      <td> Sonal Gharti </td>
+                      <td>
+                        <label class="switch">
+                          
+                          <input type="checkbox" >
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        paid
+                    </td>
+                      <td> Tokyo </td>
+                      <td> Makerere university </td>
+                      <td> 14 Mar, 2023 </td>
+                      
+                      
+                  </tr>
+                  <tr>
+                      <td> 4</td>
+                      <td> Alson GC </td>
+                      <td>
+                        <label class="switch">
+                      
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        paid
+                    </td>
+                      <td> New Delhi </td>
+                      <td> Makerere university </td>
+                      <td> 25 May, 2023 </td>
+                      
+                      
+                  </tr>
+                  <tr>
+                      <td> 5</td>
+                      <td>Sarita Limbu </td>
+                      <td>
+                        <label class="switch">
+                      
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        paid
+                    </td>
+                      <td> Paris </td>
+                      <td> Makerere university </td>
+                      <td> 23 Apr, 2023 </td>
+                      
+                      
+                  </tr>
+                  <tr>
+                      <td> 6</td>
+                      <td> Alex Gonley </td>
+                      <td>
+                        <label class="switch">
+                      
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          
+                        </label>
+                        paid
+                    </td>
+                      <td> London </td>
+                      <td> Makerere university </td>
+                      <td> 23 Apr, 2023 </td>
+                      
+                      
+                  </tr>
+                  
+              </tbody>
+              
+          </table>
+          <div class="table-btn">
+            <button class="pre">next</button>
+            <button class="next">next</button>
+          </div>
+          
+      </div>
+  </div>
+  
+  </main>
+
+  <script src="app.js"></script>
+  <script src="popup.js"></script>
+  <script src="table.js"></script> 
+  <script>
+    function toggleForm() {
+      var checkbox = document.getElementById("toggleCheckbox");
+      var form = document.getElementById("popupForm");
+      form.style.display = checkbox.checked ? "block" : "none";
+    }
+
+    function submitForm() {
+      var checkbox = document.getElementById("toggleCheckbox");
+      checkbox.checked = true; // Set the checkbox as checked
+      var form = document.getElementById("popupForm");
+      form.style.display = "none"; // Hide the popup form
+      return false; // Prevent form submission
+    }
+  </script>
+  <script>
+    //search
+    var searchInput = document.querySelector("input[name='search']");
+    var tableRows = document.querySelectorAll(".table__body tbody tr");
+    
+    // Event listener for the search input
+    searchInput.addEventListener("input", function() {
+      var searchValue = searchInput.value.trim().toLowerCase();
+    
+      // Iterate through each table row and hide/show based on the search value
+      tableRows.forEach(function(row) {
+        var contentCells = Array.from(row.querySelectorAll("td"));
+    
+        var isContentFound = contentCells.some(function(cell) {
+          var cellContent = cell.textContent.toLowerCase();
+          return cellContent.includes(searchValue);
+        });
+    
+        if (isContentFound) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    });
+    
+
+  </script>
+</body>
+
+</html>

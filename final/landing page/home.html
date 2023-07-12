@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutor Learning System</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <img src="logo.png" alt="Tutor Learning System Logo"> -->
+            <h1>Tutor Learning System</h1>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">For Tutors</a></li>
+            <li><a href="#">For Employers</a></li>
+        </ul>
+        <div class="user-actions">
+          <a href="../landing page/signup/login.html"><button id="login">Login</button></a>  
+            <a href="../landing page/signup/sign-up.html"><button id="signup" >Sign Up</button></a>
+        </div>
+    </nav>
+    <section class="career-section">
+        
+        </div>
+        <div class="career-info">
+            <h2>Learn your way to a rewarding career <br> in tech</h2>
+            <p>Boost your skills in web &amp; mobile development, UI/UX design and so much more <br>
+                with personalized guidance from expert tutors, and exposure to potential <br> employers after successful completion.</p>
+        </div>
+        <div class="signup-button">
+           <a href="../landing page/signup/sign-up.html"><button id="btn1">Sign Up</button></a> 
+
+           
+        </div>
+        <div class="image">
+            <img src="/landing page/Assets/Home Page Img_SVG.svg" alt="">
+        </div>
+        
+    </section>
+    <section class="courses-section">
+      <!-- pop up form -->
+      <div id="popup" class="hidden">
+        
+        <form id="form">
+            <h4>Payment</h4>
+        <p>Please select the name of the course you are paying for:</p>
+            <label for="course">Course:</label> <br>
+            <select id="course" name="course">
+                <option value="web-development">Web Development</option>
+                <option value="mobile-app-development">Mobile App Development</option>
+                <option value="ui-ux-design">UI/UX Design</option>
+                 Add more options as needed 
+            </select>
+            <div class="btn">
+                <button type="button" class="close" id="close" onclick="hide()">Cancel</button>
+                <button class="proceed" id="select-tutor">Proceed</button>
+        </div>
+        </form>
+    </div>
+      <!-- <div id="popup">
+        <form id="form">
+          <h3>Payment</h3>
+          
+           
+          <div class="btn">
+            <button type="button" id="close" >Cancel</button>
+            <button type="button" id="submit" onclick="add()">Submit</button>
+          </div>
+         </form>
+      </div> -->
+        <h2>Choose from our growing selection of courses, taught by experts</h2>
+        <div class="flex">
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Create stunning websites and implement dynamic features using the latest web technologies. Join now for one-on-one sessions tailored to your needs and skill level.</p>
+            <!-- <button class="enroll-button" id="payment-form">Enroll</button> -->
+            <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+        <div class="course-card">
+            <h3>Mobile Development</h3>
+            <p>Build stunning mobile apps and implement core functionality 
+                using the latest mobile technologies. Join now to create
+                 apps that will delight your users and stand out in the app stores!</p>
+                 <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Create stunning websites and implement dynamic features using the latest web technologies. Join now for one-on-one sessions tailored to your needs and skill level.</p>
+            <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Create stunning websites and implement dynamic features using the latest web technologies. Join now for one-on-one sessions tailored to your needs and skill level.</p>
+            <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Create stunning websites and implement dynamic features using the latest web technologies. Join now for one-on-one sessions tailored to your needs and skill level.</p>
+            <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Create stunning websites and implement dynamic features using the latest web technologies. Join now for one-on-one sessions tailored to your needs and skill level.</p>
+            <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Create stunning websites and implement dynamic features using the latest web technologies. Join now for one-on-one sessions tailored to your needs and skill level.</p>
+            <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Create stunning websites and implement dynamic features using the latest web technologies. Join now for one-on-one sessions tailored to your needs and skill level.</p>
+            <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Create stunning websites and implement dynamic features using the latest web technologies. Join now for one-on-one sessions tailored to your needs and skill level.</p>
+            <a href="enrollment.html"><button id="add" class="enroll-button">Enroll &#x2192;</button></a>
+        </div>
+    </div>
+    </section>
+ 
+     <!-- our team -->
+    <section class="team-section">
+        <h2>Meet our team</h2>
+        
+        <div class="team-content">
+            <p>We are a team of passionate computing students from Makerere University, who have made it our mission to spread and share the technical knowledge and skills we have acquired with the rest of our community.</p>
+        </div>
+        
+        <div class="profile-cards">
+            <div class="profile-card">
+                <img src="profile1.jpg" alt="Profile 1">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>
+            </div>
+            <!-- Add more profile cards as needed -->
+            <div class="profile-card">
+                <img src="profile1.jpg" alt="Profile 1">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>
+            </div>
+            <div class="profile-card">
+                <img src="profile1.jpg" alt="Profile 1">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>
+            </div>
+            <div class="profile-card">
+                <img src="profile1.jpg" alt="Profile 1">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>
+            </div>
+            <div class="profile-card">
+                <img src="profile1.jpg" alt="Profile 1">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>
+            </div>
+        </div>
+        
+    </section>
+    <!-- tutors -->
+    <!-- <section class="pro" id="sectect-tutor">
+      <h2>Select Tutor</h2>
+        <div class="profile">
+		<div class="container">
+			<img src="images/photo.jpg">
+			<div class="profile-text">
+				<h1>Ahmed</h1>
+				<h4> Web Developer</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+			</div>
+            <button class="select">Select</button>	
+		</div>
+        <div class="container">
+			<img src="images/photo.jpg">
+			<div class="profile-text">
+				<h1>Philip</h1>
+				<h4>UI/Designer</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+			</div>
+            <button class="select">Select</button>	
+		</div>
+        <div class="container">
+			<img src="images/photo.jpg">
+			<div class="profile-text">
+				<h1>John</h1>
+				<h4> Web Developer</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+			</div>
+            <button class="select">Select</button>	
+		</div>
+        <div class="container">
+			<img src="images/photo.jpg">
+			<div class="profile-text">
+				<h1>Tahmid </h1>
+				<h4> Web Developer</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+			</div>
+            <button class="select">Select</button>	
+		</div>
+        <div class="container">
+			<img src="images/photo.jpg">
+			<div class="profile-text">
+				<h1>Tahmid </h1>
+				<h4> Web Developer</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+			</div>
+            <button class="select">Select</button>	
+		</div>
+        <div class="container">
+			<img src="images/photo.jpg">
+			<div class="profile-text">
+				<h1>Tahmid </h1>
+				<h4> Web Developer</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+			</div>
+            <button class="select">Select</button>	
+		</div>
+        <div class="container">
+			<img src="images/photo.jpg">
+			<div class="profile-text">
+				<h1>Tahmid </h1>
+				<h4> Web Developer</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+			</div>
+            <button class="select">Select</button>	
+		</div>
+        <div class="container">
+			<img src="images/photo.jpg">
+			<div class="profile-text">
+				<h1>Tahmid </h1>
+				<h4> Web Developer</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+			</div>
+            <button class="select">Select</button>	
+		</div>
+    </div>
+	</section> -->
+    <!-- <section class="tutors-section">
+        <h2>Our Tutors</h2>
+        
+        <div class="profile-cards">
+            <div class="profile-card">
+                <img src="images/photo.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+             Add more profile cards as needed 
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="profile-card">
+                <img src="tutor1.jpg" alt="Tutor 1">
+                <h3>John Doe</h3>
+                <p>Web Development</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+        </div>
+    </section> -->
+    <section class="workforce-section">
+        <h2>We're committed to bringing world-class, <br>
+             talented professionals to your work force.</h2>
+        <p class="description">Browse through the profiles of learners who have
+             excelled through our program, <br> to find the best fit for your team.</p>
+
+             
+              <div class="container4">
+                <div class="tab-container">
+                  <div class="tab-filter-container">
+                    <li class="filter-btn active" data-tab="web-design">
+                      <ion-icon name="desktop-outline"></ion-icon>
+                      View All
+                    </li>
+                    <li class="filter-btn" data-tab="web-development">
+                      <ion-icon name="logo-nodejs"></ion-icon>
+                      UI UX Design
+                      
+                    </li>
+                    <li class="filter-btn" data-tab="ux-design">
+                      <ion-icon name="diamond-outline"></ion-icon>
+                      Web Development
+                    </li>
+                    <li class="filter-btn" data-tab="app-development">
+                      <ion-icon name="logo-google-playstore"></ion-icon>
+                      Mobile Development
+                    </li>
+                    <li class="filter-btn" data-tab="app-development">
+                        <ion-icon name="logo-google-playstore"></ion-icon>
+                        Mobile Development
+                      </li>
+                      <li class="filter-btn" data-tab="app-development">
+                        <ion-icon name="logo-google-playstore"></ion-icon>
+                        Mobile Development
+                      </li>
+                  </div>
+                  <div class="tab-filter-item-container">
+                    <div class="tab-item web-design select_tab">
+                      
+                      <div class="tab-content-right">
+                    <div class="list">
+                    <div class="category">
+                        <span>Designer</span>
+                        <span > <a href="">View Project &#x2197;</a> </span>
+                    </div>
+                    <p class="name">Tuyishimire Bertrand</p> <br><br> <br>
+                    <a href="#">contact</a>
+                    
+                    </div>
+                    <div class="list">
+                        <div class="category">
+                            <span>Web Developer</span>
+                            <span > <a href="">View Project &#x2197;</a> </span>
+                        </div>
+                        <p class="name">Okitoi john</p> 
+                        <br><br> <br>
+                    <a href="#">contact</a>
+                        
+                        </div>
+                        
+                      
+                       
+                      </div>
+                    </div>
+                    <div class="tab-item web-development">
+                        <div class="tab-content-right">
+                            <div class="list">
+                            <div class="category">
+                                <span>Designer</span>
+                                <span > <a href="">View Project &#x2197;</a> </span>
+                            </div>
+                            <p class="name">Tuyishimire Bertrand</p> 
+                            <br><br> <br>
+                    <a href="#">contact</a>
+                            
+                            </div>
+                            <div class="list">
+                                <div class="category">
+                                    <span>Web Developer</span>
+                                    <span > <a href="">View Project &#x2197;</a> </span>
+                                </div>
+                                <p class="name">Okitoi john</p> 
+                                <br><br> <br>
+                    <a href="#">contact</a>
+                                
+                                
+                                </div>
+                                
+                              
+                               
+                              </div>
+                      
+                    </div>
+                    <div class="tab-item ux-design">
+                      
+                        <div class="tab-content-right">
+                            <div class="list">
+                            <div class="category">
+                                <span>Designer</span>
+                                <span > <a href="">View Project &#x2197;</a> </span>
+                            </div>
+                            <p class="name">Tuyishimire Bertrand</p> 
+                            <br><br> <br>
+                    <a href="#">contact</a>
+                            
+                            </div>
+                            <div class="list">
+                                <div class="category">
+                                    <span>Web Developer</span>
+                                    <span > <a href="">View Project &#x2197;</a> </span>
+                                </div>
+                                <p class="name">Okitoi john</p> 
+                                
+                                <br><br> <br>
+                    <a href="#">contact</a>
+                                </div>
+                                
+                              
+                               
+                              </div>
+                    </div>
+                    <div class="tab-item app-development">
+                        <div class="tab-content-right">
+                            <div class="list">
+                            <div class="category">
+                                <span>Designer</span>
+                                <span > <a href="">View Project &#x2197;</a> </span>
+                            </div>
+                            <p class="name">Tuyishimire Bertrand</p> 
+                            <br><br> <br>
+                    <a href="#">contact</a>
+                            
+                            </div>
+                            <div class="list">
+                                <div class="category">
+                                    <span>Web Developer</span>
+                                    <span > <a href="">View Project &#x2197;</a> </span>
+                                </div>
+                                <p class="name">Okitoi john</p> 
+                                <br><br> <br>
+                    <a href="#">contact</a>
+                                
+                                </div>
+                                
+                              
+                               
+                              </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </section>
+    
+    
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".menu").classList.toggle("active");
+        });
+        
+        
+        
+        function show(){
+            document.getElementById("popup").style.display = "block";
+          }
+          function hide() {
+            document.getElementById("popup").style.display = "none";
+           
+          }
+
+         // paying
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+
+          function openForm2() {
+            document.getElementById("myForm2").style.display = "block";
+          }
+          
+          function closeForm2() {
+            document.getElementById("myForm2").style.display = "none";
+          }
+
+        //tabs
+        let filter_btn = document.querySelectorAll('.filter-btn');
+let tab_items = document.querySelectorAll('.tab-item');
+
+for (let i = 0; i < filter_btn.length; i++) {
+  filter_btn[i].addEventListener('click', function () {
+    for (let j = 0; j < filter_btn.length; j++) {
+      filter_btn[j].classList.remove('active');
+    }
+    let select_tab = filter_btn[i].getAttribute('data-tab');
+    filter_btn[i].classList.add('active');
+    for (let t = 0; t < tab_items.length; t++) {
+      document.querySelector('.tab-filter-item-container').style.height =
+        tab_items[t].scrollHeight + 'px';
+      if (tab_items[t].classList.contains(select_tab)) {
+        tab_items[t].classList.add('select_tab');
+      } else {
+        tab_items[t].classList.remove('select_tab');
+      }
+    }
+  });
+}
+
+for (let th = 0; th < tab_items.length; th++) {
+  document.querySelector('.tab-filter-item-container').style.height =
+    tab_items[th].scrollHeight + 'px';
+}
+    </script>
+</body>
+</html>

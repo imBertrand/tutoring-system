@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sessions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="sessions.css">
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <h3 class="hide">Tutor Learner</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder=" Search ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <!-- <div class="active-tab"></div> -->
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" class="active" data-active="0">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="link hide">Home</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="index.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="submissions.html" data-active="2">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Submissions</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+            <a href="topics.html" data-active="3">
+              <div class="icon">
+                <i class='bx bx-bar-chart-square'></i>
+                <i class='bx bxs-bar-chart-square'></i>
+              </div>
+              <span class="link hide">Topics</span>
+            </a>
+          </li> 
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">sessions</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="progress.html" data-active="3">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="link hide">Progress</span>
+          </a>
+        </li>
+      </ul>
+
+      
+
+
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <!-- <img src="./img/face-1.png" alt=""> -->
+          <div class="admin-info">
+            <h3>John Doe</h3>
+            <h5>john@gmail.com</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">John Doe</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <main >
+    <h1>Sessions
+            <button class="btn1" id="myBtn"><i class="fas fa-plus"></i>Creat Session</button>
+         </h1>
+   
+    
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <form>
+          <h2>create Session</h2>
+          <p>please enter the details for the session</p>
+          <div class="form-group">
+            <label for="name">Course</label>
+            <input type="text" id="course" name="course" >
+          </div>
+          <div class="form-group">
+            <label for="topic">Tutor Name</label>
+            <input type="text" id="name" name="name" >
+          </div>
+          
+          <div class="form-group">
+            <label for="session">Session details</label>
+            <input type="text" id="details" name="details" >
+          </div>
+          
+         <div class="button">
+          <button class="btn2">close</button>
+          <input type="submit" value="Submit" class="btn2-submit">
+        </div>
+        </form>
+        
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+          <form>
+            <h2>Edit Session</h2>
+            <p>please enter the details for the session</p>
+            <div class="form-group">
+              <label for="name">Course</label>
+              <input type="text" id="course" name="course" >
+            </div>
+            <div class="form-group">
+              <label for="topic">Tutor Name</label>
+              <input type="text" id="name" name="name" >
+            </div>
+            
+            <div class="form-group">
+              <label for="session">Session details</label>
+              <input type="text" id="details" name="details" >
+            </div>
+            
+           <div class="button">
+            <input type="submit" value="close" class="btn1-submit close">
+            <input type="submit" value="Submit" class="btn2-submit">
+          </div>
+          </form>
+          
+        </div>
+      </div>
+    <div class="cards">
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">Totsl Learners
+              
+            </p>
+          </div>
+          <span id="num">15</span>
+          
+
+          <!-- <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+            vel adipisci blanditiis voluptates eum. Nam, cum minima?
+          </p>    -->
+        </div>
+        <div class="card">
+          <div class="header">
+           
+            <p class="alert">New mes</p>
+          </div>
+           
+          <!-- <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea quo unde
+            vel adipisci blanditiis voluptates eum. Nam, cum minima?
+          </p>    -->
+        </div>
+           
+    </div>
+    <!-- input -->
+    <div class="content">
+      <form id="animated">
+      <input type="text" name="search" placeholder="Search..">
+      </form>
+      <div class="table">
+        <section class="table__body">
+          <table>
+              <thead>
+                  <tr>
+                      <th> <input type="checkbox"></th>
+                      <th> Tutor Name</th>
+                      <th> Topic</th>
+                      <th> Course Details </th>
+                      <th></th>
+                      
+                      
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td> Zinzu Chan Lee</td>
+                      <td>
+                        <p class="status paid">Paid</p>
+                    </td>
+                      <td> Seoul </td>
+                      <td> 17 Dec, 2022 </td>
+                      
+                     
+                  </tr>
+                  <tr>
+                      <td> 2 </td>
+                      <td>Jeet Saru </td>
+                      <td>
+                        <p class="status not-paid">Not paid</p>
+                    </td>
+                      <td> Kathmandu </td>
+                      <td> 27 Aug, 2023 </td>
+                     
+                      
+                  </tr>
+                  <tr>
+                      <td> 3</td>
+                      <td> Sonal Gharti </td>
+                      <td>
+                        <p class="status paid">Paid</p>
+                    </td>
+                      <td> Tokyo </td>
+                      <td> 14 Mar, 2023 </td>
+                      
+                      
+                  </tr>
+                  <tr>
+                    <td> 3</td>
+                    <td> Sonal Gharti </td>
+                    <td>
+                      <p class="status paid">Paid</p>
+                  </td>
+                    <td> Tokyo </td>
+                    <td> 14 Mar, 2023 </td>
+                    
+                    
+                </tr>
+                <tr>
+                  <td> 3</td>
+                  <td> Sonal Gharti </td>
+                  <td>
+                    <p class="status paid">Paid</p>
+                </td>
+                  <td> Tokyo </td>
+                  <td> 14 Mar, 2023 </td>
+                  
+                  
+              </tr>
+              <tr>
+                <td> 3</td>
+                <td> Sonal Gharti </td>
+                <td>
+                  <p class="status paid">Paid</p>
+              </td>
+                <td> Tokyo </td>
+                <td> 14 Mar, 2023 </td>
+                
+                
+            </tr>
+                 
+                
+                
+              </tbody>
+          </table>
+          <div class="table-btn">
+            <button class="pre">Previous</button>
+            <button class="next">next</button>
+          </div>
+      </div>
+  </div>
+  </main>
+
+  <script src="app.js"></script>
+  
+  
+  <script>
+    var createTopicButton = document.getElementById("myBtn");
+var modal = document.getElementById("myModal");
+var closeButton = modal.querySelector("button");
+
+createTopicButton.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+
+closeButton.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+var table = document.querySelector(".table");
+var nextButton = table.querySelector(".next");
+var previousButton = table.querySelector(".pre");
+var tableBody = table.querySelector("tbody");
+var rowsPerPage = 3; // Number of rows to display per page
+var currentPage = 0; // Current page index
+
+// Show the rows for the current page
+function showPage(pageIndex) {
+  var rows = tableBody.rows;
+
+  // Calculate the start and end index of rows for the current page
+  var startIndex = pageIndex * rowsPerPage;
+  var endIndex = startIndex + rowsPerPage;
+
+  // Hide all rows
+  for (var i = 0; i < rows.length; i++) {
+    rows[i].style.display = "none";
+  }
+
+  // Show rows within the current page range
+  for (var j = startIndex; j < endIndex && j < rows.length; j++) {
+    rows[j].style.display = "";
+  }
+}
+
+// Show the first page on initial load
+showPage(currentPage);
+
+// Event listener for the "Next" button
+nextButton.addEventListener("click", function () {
+  var rows = tableBody.rows;
+
+  // Check if there are more pages to display
+  if ((currentPage + 1) * rowsPerPage < rows.length) {
+    currentPage++;
+    showPage(currentPage);
+  }
+});
+
+// Event listener for the "Previous" button
+previousButton.addEventListener("click", function () {
+  // Check if there are previous pages to display
+  if (currentPage > 0) {
+    currentPage--;
+    showPage(currentPage);
+  }
+});
+
+
+  </script>
+  <script>
+    //search
+    var searchInput = document.querySelector("input[name='search']");
+    var tableRows = document.querySelectorAll(".table__body tbody tr");
+    
+    // Event listener for the search input
+    searchInput.addEventListener("input", function() {
+      var searchValue = searchInput.value.trim().toLowerCase();
+    
+      // Iterate through each table row and hide/show based on the search value
+      tableRows.forEach(function(row) {
+        var contentCells = Array.from(row.querySelectorAll("td"));
+    
+        var isContentFound = contentCells.some(function(cell) {
+          var cellContent = cell.textContent.toLowerCase();
+          return cellContent.includes(searchValue);
+        });
+    
+        if (isContentFound) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    });
+    
+
+  </script>
+</body>
+
+</html>

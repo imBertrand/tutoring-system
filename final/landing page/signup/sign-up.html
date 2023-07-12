@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <h1>Sign Up</h1>
+          <p>Bridge the gap between the skills you have, and the skills you need</p>
+          <form id="form">
+            <label for="name">Full Names*</label>
+            <input type="name" name="name" id="name" >
+
+            <label for="email">Email*</label>
+            <input type="email" name="name" id="email" >
+            
+            <label for="password">Password*</label>
+            <input type="password" name="password" id="password" >
+            
+            <label for="confirm">Confirm Password*</label>
+            <input type="password" name="confirm" id="confirmPassword" >
+            
+            <p id="message"></p>
+            <label for="security-question">Security Question:</label>
+            <select id="security-question">
+              <option value="q1">What is your mother's maiden name?</option>
+              <option value="q2">What is the name of your first pet?</option>
+              <option value="q3">What city were you born in?</option>
+            </select>
+            <label for="answer">Answer</label>
+            <input type="textarea"  id="answer">
+            <input class="button" type="submit" value="Sign Up">
+          </form>
+          <div class="accept">
+           
+            <label for="terms">Already have an account<a href="/landing page/signup/login.html">Login<a></label>
+          </div>
+           
+        </div>
+        
+        <div class="right">
+          <img src="/landing page/Assets/Sign_up_img.png" alt="">
+        </div>
+        
+      </div>
+      
+      <script src="check.js"></script>
+      
+</body>
+</html>
